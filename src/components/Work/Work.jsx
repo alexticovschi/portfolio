@@ -5,6 +5,7 @@ import "./work.scss"
 import lofter from "../../images/portfolio/lofter.png"
 import traveler from "../../images/portfolio/traveler.png"
 import moviedb from "../../images/portfolio/moviedb.jpg"
+import gsw from "../../images/portfolio/gsw_react.jpg"
 
 const Work = () => {
   return (
@@ -13,7 +14,11 @@ const Work = () => {
 
       <div className="project lofter-project">
         <figure className="project__img-wrapper">
-          <a href="https://lofter.netlify.com/" target="blank">
+          <a
+            href="https://lofter.netlify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <img
               className="project__img"
               src={lofter}
@@ -42,10 +47,18 @@ const Work = () => {
           </ul>
 
           <div className="project__links">
-            <a href="https://github.com/alexticovschi/lofter" target="blank">
+            <a
+              href="https://github.com/alexticovschi/lofter"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FaGithub className="project__icon" />
             </a>
-            <a href="https://lofter.netlify.com/" target="blank">
+            <a
+              href="https://lofter.netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FaExternalLinkAlt className="project__icon" />
             </a>
           </div>
@@ -54,7 +67,11 @@ const Work = () => {
 
       <div className="project traveler-project">
         <figure className="project__img-wrapper">
-          <a href="https://traveler-gatsby.netlify.com/" target="blank">
+          <a
+            href="https://traveler-gatsby.netlify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <img
               className="project__img"
               src={traveler}
@@ -85,10 +102,18 @@ const Work = () => {
           </ul>
 
           <div className="project__links">
-            <a href="https://github.com/alexticovschi/traveler" target="blank">
+            <a
+              href="https://github.com/alexticovschi/traveler"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FaGithub className="project__icon" />
             </a>
-            <a href="https://traveler-gatsby.netlify.com/" target="blank">
+            <a
+              href="https://traveler-gatsby.netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FaExternalLinkAlt className="project__icon" />
             </a>
           </div>
@@ -97,7 +122,11 @@ const Work = () => {
 
       <div className="project">
         <figure className="project__img-wrapper">
-          <a href="https://tmdb-react-v2.netlify.com/" target="blank">
+          <a
+            href="https://tmdb-react-v2.netlify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <img className="project__img" src={moviedb} alt="TMDB front page" />
           </a>
         </figure>
@@ -124,11 +153,67 @@ const Work = () => {
           <div className="project__links">
             <a
               href="https://github.com/alexticovschi/tmdb-react-V2"
-              target="blank"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               <FaGithub className="project__icon" />
             </a>
-            <a href="https://tmdb-react-v2.netlify.com/" target="blank">
+            <a
+              href="https://tmdb-react-v2.netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaExternalLinkAlt className="project__icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="project gsw-project">
+        <figure className="project__img-wrapper">
+          <a
+            href="https://gsw-react.netlify.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img className="project__img" src={gsw} alt="gsw front page" />
+          </a>
+        </figure>
+
+        <div className="project__info">
+          <h5>Featured Project</h5>
+          <h4>Golden State Warriors</h4>
+
+          <div className="project__about">
+            <p>
+              A React based web app that connects to Firebase to pull data about
+              Golden State Warriors NBA players and games. Performs Firebase
+              JavaScript CRUD operations. It also uses TheSports DB API to pull
+              more data data about all NBA teams and players.
+            </p>
+          </div>
+
+          <ul>
+            <li>React</li>
+            <li>Firebase</li>
+            <li>Material-UI</li>
+            <li>CSS Grid</li>
+            <li>Flexbox</li>
+          </ul>
+
+          <div className="project__links">
+            <a
+              href="https://github.com/alexticovschi/gsw-react"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaGithub className="project__icon" />
+            </a>
+            <a
+              href="https://gsw-react.netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <FaExternalLinkAlt className="project__icon" />
             </a>
           </div>

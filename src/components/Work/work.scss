@@ -126,19 +126,20 @@
   }
 }
 
-.traveler-project {
+.traveler-project,
+.gsw-project {
   .project__img-wrapper {
-    grid-column: 6 / -1 !important;
+    grid-column: 6 / -1;
   }
 
   .project__info {
     position: absolute;
-    grid-column: 1 / 7 !important;
+    grid-column: 1 / 7;
   }
 
   .project__info {
     position: absolute;
-    grid-column: 1 / 7 !important;
+    grid-column: 1 / 7;
 
     h5,
     h4,
