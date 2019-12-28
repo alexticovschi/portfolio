@@ -1,4 +1,5 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import "./hero.scss"
 
@@ -14,7 +15,9 @@ const Hero = () => {
           work below.
         </p>
 
-        {/* <button id="work">Portfolio</button> */}
+        <button className="hero__btn" onClick={() => scrollTo("#work")}>
+          Portfolio
+        </button>
       </div>
     </section>
   )
