@@ -23,7 +23,7 @@ header {
 
     li {
       display: inline-block;
-      padding: 0 2rem;
+      padding: 0 1rem;
 
       a {
         text-decoration: none;
@@ -59,12 +59,12 @@ header {
 .btn {
   color: #fff;
   padding: .9rem 2rem;
+  margin-left: 1rem;
   background-color: var(--darkGrey);
-  border: none;
   border-radius: .4rem;
+  border: .2rem solid var(--secondaryColor);
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  border: .2rem solid var(--secondaryColor);
 
   &:hover {
     background-color: rgba(41, 41, 41, .9);
