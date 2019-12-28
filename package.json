@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Alex Ticovschi Portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Personal Website made with Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -15,8 +15,13 @@
   },
   "dependencies": {
     "gatsby": "^2.18.12",
+    "gatsby-plugin-sass": "^2.1.26",
+    "gatsby-plugin-smoothscroll": "^1.0.4",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-headroom": "^3.0.0",
+    "react-icons": "^3.8.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

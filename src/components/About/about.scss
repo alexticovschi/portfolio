@@ -1,0 +1,29 @@
+.about {
+  grid-column: center-start/ center-end;
+
+  padding: 15rem 0;
+  align-self: center;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  &__title {
+    display: flex;
+    margin-bottom: 4rem;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: rgb(45, 57, 82);
+      position: relative;
+      top: 2rem;
+      margin-left: 20px;
+    }
+  }
+
+  &__wrapper {
+    grid-column: 3 / -1;
+  }
+}

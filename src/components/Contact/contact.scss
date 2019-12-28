@@ -1,0 +1,12 @@
+.contact {
+  grid-column: center-start/ center-end;
+
+  padding: 15rem 0;
+  align-self: center;
+  justify-self: center;
+
+  &__title {
+    text-align: center;
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,22 @@
+.footer {
+  grid-column: full-start/ full-end;
+
+
+  background-color: var(--darkGrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    color: var(--offWhite);
+    font-size: 1.6rem;
+    margin: 0;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--secondaryColor);
+
+    }
+  }
+}

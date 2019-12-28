@@ -1,0 +1,42 @@
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  width: 4rem;
+  position: fixed;
+  bottom: 0px;
+  right: 4rem;
+  left: auto;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    display: block;
+    width: .1rem;
+    height: 9rem;
+    background-color: var(--mediumGrey);
+    margin: 0px auto;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration-skip-ink: auto;
+    color: var(--mediumGrey);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+    writing-mode: vertical-rl;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-size: 1.7rem;
+
+    &:hover {
+      color: var(--primaryColor);
+      transform: translateY(-5px);
+    }
+
+  }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+:root {
+  --primaryColor: rgb(13, 165, 129);
+  --secondaryColor: rgb(132, 248, 221);
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #e7e7e7;
+  --lightGrey: #858585;
+  --mediumGrey: #484848;
+  --darkGrey: #282828;
+  --black: #000;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 2px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5%;
+
+  /* Scrollbar styles */
+  &::-webkit-scrollbar {
+    width: .7rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #242424;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, var(--secondaryColor) 60%, #242424);
+    outline: 1px solid #6b6b6b;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+  font-size: 2.8rem;
+  letter-spacing: var(--mainSpacing);
+  color: var(--darkGrey);
+}
+
+p {
+  margin-bottom: 1.25rem;
+  font-family: 'Proza Libre', sans-serif;
+  color: var(--darkGrey);
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+      [col-start] minmax(min-content, 13rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: auto 90vh min-content min-content 100vh 10vh;
+}
