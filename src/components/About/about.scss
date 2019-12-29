@@ -10,15 +10,16 @@
   &__title {
     display: flex;
     margin-bottom: 4rem;
+    font-size: 3.2rem;
 
     &::after {
       content: "";
       display: block;
       height: 1px;
       width: 300px;
-      background-color: rgb(45, 57, 82);
+      background-color: var(--darkGrey);
       position: relative;
-      top: 2rem;
+      top: 2.5rem;
       margin-left: 20px;
     }
   }

@@ -12,8 +12,8 @@ header {
   align-items: center;
   padding: 2rem 4%;
   border-bottom: .1rem solid var(--darkGrey);
-  background-color: #fff;
-  box-shadow: 0 2.5px 2px -2px rgb(223, 223, 223);
+  background-color: var(--mainWhite);
+  box-shadow: 0 2.5px 2px -2px var(--mainGrey);
 }
 
 .nav {
@@ -24,20 +24,11 @@ header {
     li {
       display: inline-block;
       padding: 0 1rem;
-
-      a {
-        text-decoration: none;
-        transition: all 0.3s ease 0s;
-
-        &:hover {
-          color: #0088a9;
-        }
-      }
     }
   }
 
   &__link {
-    background-color: #fff;
+    background-color: var(--mainWhite);
     color: var(--darkGrey);
     outline: none;
     font-size: 1.4rem;
@@ -50,23 +41,23 @@ header {
 
     &:hover {
       background-color: var(--mainGrey);
-      background-color: var(--secondaryColor);
+      background-color: var(--primaryColor);
 
     }
   }
 }
 
 .btn {
-  color: #fff;
+  color: var(--mainWhite);
   padding: .9rem 2rem;
   margin-left: 1rem;
   background-color: var(--darkGrey);
   border-radius: .4rem;
-  border: .2rem solid var(--secondaryColor);
+  border: .2rem solid var(--primaryColor);
   cursor: pointer;
   transition: all 0.3s ease 0s;
 
   &:hover {
-    background-color: rgba(41, 41, 41, .9);
+    background-color: var(--mediumGrey);
   }
 }

@@ -31,15 +31,15 @@
     height: 6rem;
     margin-top: 3rem;
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--mainWhite);
     background-color: var(--darkGrey);
     border-radius: .4rem;
-    border: .25rem solid var(--secondaryColor);
+    border: .25rem solid var(--primaryColor);
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
     &:hover {
-      background-color: rgba(41, 41, 41, .9);
+      background-color: var(--mediumGrey);
     }
   }
 }

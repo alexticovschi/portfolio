@@ -2,16 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
 :root {
-  --primaryColor: rgb(13, 165, 129);
-  --secondaryColor: rgb(132, 248, 221);
+  --primaryColor: rgb(132, 248, 221);
+  --secondaryColor: rgb(90, 207, 180);
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBlack: #222;
   --mainGrey: #e7e7e7;
   --lightGrey: #858585;
   --mediumGrey: #484848;
   --darkGrey: #282828;
-  --black: #000;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 2px;
 }
@@ -27,13 +25,13 @@ html {
 
   &::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #242424;
+    background-color: var(--darkGrey);
   }
 
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, var(--secondaryColor) 60%, #242424);
-    outline: 1px solid #6b6b6b;
+    background-image: linear-gradient(to bottom, var(--primaryColor) 60%, #242424);
+    outline: 1px solid var(--lightGrey);
   }
 }
 

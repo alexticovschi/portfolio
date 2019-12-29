@@ -11,25 +11,23 @@
   }
 
   &__btn {
-    margin: 0 auto;
     width: 18rem;
     height: 6rem;
     margin-top: 3rem;
     font-size: 1.6rem;
     background-color: var(--darkGrey);
     border-radius: .4rem;
-    border: .25rem solid var(--secondaryColor);
+    border: .25rem solid var(--primaryColor);
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
     &:hover {
-      background-color: rgba(41, 41, 41, .9);
+      background-color: var(--mediumGrey);
     }
 
     a {
       text-decoration: none;
-      color: #fff;
-
+      color: var(--mainWhite);
     }
   }
 }
