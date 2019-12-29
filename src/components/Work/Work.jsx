@@ -52,14 +52,17 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaGithub className="project__icon" />
+              <FaGithub className="project__icon" title="Github" />
             </a>
             <a
               href="https://lofter.netlify.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaExternalLinkAlt className="project__icon" />
+              <FaExternalLinkAlt
+                className="project__icon"
+                title="View Project"
+              />
             </a>
           </div>
         </div>
@@ -96,7 +99,7 @@ const Work = () => {
           <ul>
             <li>React</li>
             <li>GatsbyJS</li>
-            <li>Contentful</li>
+            <li>Contentful API</li>
             <li>CSS Grid</li>
             <li>Flexbox</li>
           </ul>
@@ -107,14 +110,17 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaGithub className="project__icon" />
+              <FaGithub className="project__icon" title="Github" />
             </a>
             <a
               href="https://traveler-gatsby.netlify.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaExternalLinkAlt className="project__icon" />
+              <FaExternalLinkAlt
+                className="project__icon"
+                title="View Project"
+              />
             </a>
           </div>
         </div>
@@ -156,14 +162,17 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaGithub className="project__icon" />
+              <FaGithub className="project__icon" title="Github" />
             </a>
             <a
               href="https://tmdb-react-v2.netlify.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaExternalLinkAlt className="project__icon" />
+              <FaExternalLinkAlt
+                className="project__icon"
+                title="View Project"
+              />
             </a>
           </div>
         </div>
@@ -207,14 +216,17 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaGithub className="project__icon" />
+              <FaGithub className="project__icon" title="Github" />
             </a>
             <a
               href="https://gsw-react.netlify.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              <FaExternalLinkAlt className="project__icon" />
+              <FaExternalLinkAlt
+                className="project__icon"
+                title="View Project"
+              />
             </a>
           </div>
         </div>
