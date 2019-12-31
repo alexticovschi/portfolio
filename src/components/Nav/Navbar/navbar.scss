@@ -42,7 +42,19 @@ header {
     &:hover {
       background-color: var(--mainGrey);
       background-color: var(--primaryColor);
+    }
+  }
 
+  &__link,
+  &__link-resume {
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+  }
+
+  &__toggle-button {
+    @media screen and (min-width: 769px) {
+      display: none;
     }
   }
 }
