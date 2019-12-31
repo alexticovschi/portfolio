@@ -1,16 +1,19 @@
 import React from "react"
 import ToggleButton from "../ToggleButton/ToggleButton"
 import scrollTo from "gatsby-plugin-smoothscroll"
-
+import logo from "../../../images/logo.svg"
 import "./navbar.scss"
 
 const Navbar = ({ isOpen, drawerClickHandler }) => {
   return (
     <header>
-      <div>
-        <img className="logo" src="" alt="" />
-        LOGO
-      </div>
+      <img
+        onClick={() => scrollTo("#home")}
+        className="logo"
+        src={logo}
+        alt=""
+      />
+
       <nav className="nav">
         <ul className="nav__links">
           <li>

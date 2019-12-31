@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700&display=swap');
+
 .headroom-wrapper {
   grid-column: full-start / full-end;
   z-index: 100;
+}
 
+.logo {
+  cursor: pointer;
 }
 
 header {
@@ -40,7 +45,6 @@ header {
     transition: all 0.3s ease 0s;
 
     &:hover {
-      background-color: var(--mainGrey);
       background-color: var(--primaryColor);
     }
   }
