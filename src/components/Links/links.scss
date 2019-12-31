@@ -6,6 +6,10 @@
   right: auto;
   z-index: 10;
 
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
+
   &::after {
     content: "";
     display: block;
