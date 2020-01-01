@@ -7,10 +7,14 @@ const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero__content">
-        <p>Hi, my name is</p>
-        <h1>Alex Ticovschi</h1>
-        <h2>I build things for the web.</h2>
-        <p>
+        <p className="hero__text hero__text--1">Hi, my name is</p>
+        <h1 className="hero__name">
+          Alex Ticovschi<span className="hero__dot"></span>
+        </h1>
+        <h2 className="hero__subtitle">
+          I build things for the web<span className="hero__dot"></span>
+        </h2>
+        <p className="hero__text hero__text--2">
           I'm a Front End Developer based in London, UK. You can check out my
           work below.
         </p>

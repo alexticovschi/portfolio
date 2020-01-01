@@ -8,7 +8,7 @@
   --offWhite: #f7f7f7;
   --mainGrey: #e7e7e7;
   --lightGrey: #858585;
-  --mediumGrey: #484848;
+  --mediumGrey: #616161;
   --darkGrey: #282828;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 2px;
@@ -52,6 +52,7 @@ body {
   padding: 0;
   box-sizing: inherit;
   text-decoration: none;
+  outline: none;
 }
 
 h1,
@@ -83,6 +84,6 @@ p {
   grid-template-rows: auto 90vh min-content min-content 100vh 9vh;
 
   @media screen and (max-width: 769px) {
-    grid-template-rows: auto 90vh min-content min-content 100vh 15vh;
+    grid-template-rows: auto minmax(90vh, auto) min-content min-content 100vh 15vh;
   }
 }

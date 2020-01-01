@@ -1,28 +1,96 @@
 .hero {
   grid-column: center-start/ center-end;
-  padding: 15rem 1rem;
+  padding: 15% 0;
   height: 100%;
-  width: 100%;
 
   align-self: center;
   justify-self: center;
 
+  @media screen and (max-width: 575px) {
+    grid-column: full-start/ full-end;
+    margin: 0 2rem;
+  }
+
+  &__dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--lightGrey);
+    border-radius: 50%;
+    display: inline-block;
+
+    @media screen and (max-width: 680px) {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+
   &__content {
     display: grid;
-    padding: 5% 0;
+    align-content: center;
+    height: 100%;
 
-    p {
-      font-size: 1.8rem;
-      color: var(--mediumGrey);
+    @media screen and (max-width: 1250px) {
+      padding: 5% 4%;
     }
 
-    h1 {
-      font-size: 7rem;
+    @media screen and (max-width: 680px) {
+      padding: 0;
     }
 
-    h2 {
-      font-size: 7rem;
-      color: var(--mediumGrey);
+    @media screen and (max-width: 575px) {
+      grid-template-rows: 3rem 6rem 12rem repeat(2, min-content);
+    }
+
+    @media screen and (max-width: 475px) {
+      grid-template-rows: 3rem min-content min-content repeat(2, min-content);
+    }
+  }
+
+  &__name,
+  &__subtitle {
+    font-size: 7rem;
+    margin: 0;
+
+    @media screen and (max-width: 1250px) {
+      font-size: 6rem;
+    }
+
+    @media screen and (max-width: 780px) {
+      font-size: 5rem;
+    }
+
+    @media screen and (max-width: 575px) {
+      font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 3.5rem;
+    }
+
+    @media screen and (max-width: 335px) {
+      font-size: 3rem;
+    }
+  }
+
+  &__subtitle {
+    color: var(--mediumGrey);
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--mediumGrey);
+
+    @media screen and (max-width: 475px) {
+      font-size: 1.5rem;
+    }
+
+    &--1 {
+      color: var(--darkGrey);
+    }
+
+    &--2 {
+      padding: 3rem 0;
     }
   }
 
@@ -37,6 +105,10 @@
     border: .25rem solid var(--primaryColor);
     cursor: pointer;
     transition: all 0.3s ease 0s;
+
+    @media screen and (max-width: 335px) {
+      margin: 0;
+    }
 
     &:hover {
       background-color: var(--mediumGrey);
