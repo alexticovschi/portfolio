@@ -86,4 +86,8 @@ p {
   @media screen and (max-width: 769px) {
     grid-template-rows: auto minmax(90vh, auto) min-content min-content 100vh 15vh;
   }
+
+  @media screen and (max-width: 575px) {
+    grid-template-rows: auto minmax(90vh, auto) min-content min-content 60vh 20vh;
+  }
 }

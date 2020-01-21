@@ -9,6 +9,8 @@
 	@media screen and (max-width: 575px) {
 		grid-column: full-start/ full-end;
 		margin: 0 1.5rem;
+		padding-top: 10rem;
+		padding-bottom: 0;
 	}
 
 	&__wrapper {

@@ -6,8 +6,16 @@
   justify-self: center;
   text-align: center;
 
+  @media screen and (max-width: 575px) {
+    padding: 0;
+  }
+
   &__title {
     font-size: 4rem;
+
+    @media screen and (max-width: 575px) {
+      font-size: 3rem;
+    }
   }
 
   &__btn {
