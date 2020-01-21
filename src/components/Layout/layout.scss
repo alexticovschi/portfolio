@@ -81,13 +81,13 @@ p {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
       [col-start] minmax(min-content, 13rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  grid-template-rows: auto 90vh min-content min-content 100vh 10rem;
+  grid-template-rows: auto 90vh repeat(2, min-content) 100vh 10rem;
 
   @media screen and (max-width: 769px) {
-    grid-template-rows: auto minmax(90vh, auto) min-content min-content 100vh 16rem;
+    grid-template-rows: auto minmax(90vh, auto) repeat(2, min-content) 100vh 16rem;
   }
 
   @media screen and (max-width: 575px) {
-    grid-template-rows: auto minmax(90vh, auto) min-content min-content 60vh 14rem;
+    grid-template-rows: auto minmax(90vh, auto) repeat(2, min-content) 60vh 14rem;
   }
 }
