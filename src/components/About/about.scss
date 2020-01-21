@@ -14,6 +14,7 @@
   @media screen and (max-width: 575px) {
     grid-column: full-start/ full-end;
     margin: 0 2rem;
+    padding: 5rem 0;
   }
 
   &__title {
@@ -21,19 +22,17 @@
     margin-bottom: 4rem;
     font-size: 3.2rem;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 480px) {
       font-size: 2.6rem;
+      margin-bottom: 2rem;
     }
 
-    @media screen and (max-width: 325px) {
-      font-size: 2.5rem;
-    }
 
     &::after {
       content: "";
       display: block;
       height: 1px;
-      width: 300px;
+      width: 30rem;
       background-color: var(--darkGrey);
       position: relative;
       top: 2.5rem;
@@ -43,7 +42,7 @@
         width: 35vw;
       }
 
-      @media screen and (max-width: 375px) {
+      @media screen and (max-width: 480px) {
         top: 2rem;
       }
     }
