@@ -230,14 +230,16 @@
 .gsw-project {
 	.project__img-wrapper {
 		grid-column: 6 / -1;
+
+		@media screen and (max-width: 767px) {
+			grid-column: 1;
+		}
 	}
 
 	.project__info {
 		position: absolute;
-
 		grid-column: 1 / 7;
 
-		@media screen and (max-width: 767px) {}
 
 		h5,
 		h4,
