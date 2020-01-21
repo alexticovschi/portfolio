@@ -1,14 +1,54 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Image from "gatsby-image"
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 import "./work.scss"
 
-import lofter from "../../images/portfolio/lofter.png"
-import foodwise from "../../images/portfolio/foodwise.png"
-import traveler from "../../images/portfolio/traveler.png"
-import moviedb from "../../images/portfolio/moviedb.jpg"
-import gsw from "../../images/portfolio/gsw_react.jpg"
+const getPortfolioImages = graphql`
+  query portfolioImages {
+    moviedb: file(relativePath: { eq: "portfolio/moviedb.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    foodwise: file(relativePath: { eq: "portfolio/foodwise.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    traveler: file(relativePath: { eq: "portfolio/traveler.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    gsw: file(relativePath: { eq: "portfolio/gsw.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    lofter: file(relativePath: { eq: "portfolio/lofter.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 600) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const Work = () => {
+  const { moviedb, foodwise, traveler, gsw, lofter } = useStaticQuery(
+    getPortfolioImages
+  )
+
   return (
     <section className="work" id="work">
       <h1 className="work__title">Some Things I've Built</h1>
@@ -21,10 +61,10 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
+              <Image
+                fluid={moviedb.childImageSharp.fluid}
                 className="project__img"
-                src={moviedb}
-                alt="TMDB front page"
+                alt="TMDB hero"
               />
             </a>
           </figure>
@@ -77,10 +117,10 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
+              <Image
+                fluid={traveler.childImageSharp.fluid}
                 className="project__img"
-                src={traveler}
-                alt="traveler front page"
+                alt="traveler hero"
               />
             </a>
           </figure>
@@ -133,10 +173,10 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
+              <Image
+                fluid={foodwise.childImageSharp.fluid}
                 className="project__img"
-                src={foodwise}
-                alt="lofter front page"
+                alt="foodwise hero"
               />
             </a>
           </figure>
@@ -189,7 +229,11 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img className="project__img" src={gsw} alt="gsw front page" />
+              <Image
+                fluid={gsw.childImageSharp.fluid}
+                className="project__img"
+                alt="gsw hero"
+              />
             </a>
           </figure>
 
@@ -242,10 +286,10 @@ const Work = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <img
+              <Image
+                fluid={lofter.childImageSharp.fluid}
                 className="project__img"
-                src={lofter}
-                alt="lofter front page"
+                alt="lofter hero"
               />
             </a>
           </figure>
