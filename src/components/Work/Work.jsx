@@ -202,14 +202,14 @@ const Work = () => {
 
             <div className="project__links">
               <a
-                href="https://github.com/alexticovschi/lofter"
+                href="https://github.com/alexticovschi/foodwise"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 <FaGithub className="project__icon" title="Github" />
               </a>
               <a
-                href="https://lofter.netlify.com/"
+                href="https://foodwise.netlify.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
