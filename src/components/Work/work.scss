@@ -91,10 +91,10 @@
 		height: 100%;
 		object-fit: cover;
 		display: block;
-		opacity: .7;
+		opacity: .9;
 
 		border: .1rem solid var(--mainGrey);
-		transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .4s;
+		transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .3s;
 
 		@media screen and (max-width: 1050px) {
 			height: 32rem;
