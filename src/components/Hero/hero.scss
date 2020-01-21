@@ -60,14 +60,10 @@
     }
 
     @media screen and (max-width: 575px) {
-      font-size: 4.5rem;
-    }
-
-    @media screen and (max-width: 375px) {
       font-size: 3.5rem;
     }
 
-    @media screen and (max-width: 335px) {
+    @media screen and (max-width: 375px) {
       font-size: 3rem;
     }
   }
