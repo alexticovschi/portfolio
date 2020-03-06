@@ -225,7 +225,7 @@ const Work = () => {
         <div className="project gsw-project">
           <figure className="project__img-wrapper">
             <a
-              href="https://gsw-react.netlify.com/"
+              href="https://golden-state-warriors.netlify.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
