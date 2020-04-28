@@ -6,37 +6,44 @@ import "./work.scss"
 
 const getPortfolioImages = graphql`
   query portfolioImages {
+    bloggingcoder: file(relativePath: { eq: "portfolio/bloggingcoder.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     moviedb: file(relativePath: { eq: "portfolio/moviedb.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     foodwise: file(relativePath: { eq: "portfolio/foodwise.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     traveler: file(relativePath: { eq: "portfolio/traveler.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     gsw: file(relativePath: { eq: "portfolio/gsw.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     lofter: file(relativePath: { eq: "portfolio/lofter.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 600) {
+        fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -45,15 +52,75 @@ const getPortfolioImages = graphql`
 `
 
 const Work = () => {
-  const { moviedb, foodwise, traveler, gsw, lofter } = useStaticQuery(
-    getPortfolioImages
-  )
+  const {
+    bloggingcoder,
+    moviedb,
+    foodwise,
+    traveler,
+    gsw,
+    lofter,
+  } = useStaticQuery(getPortfolioImages)
 
   return (
     <section className="work" id="work">
       <h1 className="work__title">Some Things I've Built</h1>
 
       <div className="work__wrapper">
+        <div className="project bloggingcoder-project">
+          <figure className="project__img-wrapper">
+            <a
+              href="https://bloggingcoder.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                fluid={bloggingcoder.childImageSharp.fluid}
+                className="project__img"
+                alt="BloggingCoder hero"
+              />
+            </a>
+          </figure>
+
+          <div className="project__info">
+            <h5>Featured Project</h5>
+            <h4>BloggingCoder</h4>
+
+            <div className="project__about">
+              <p>
+                A Fullstack multi-user blogging platform with Node, React,
+                Next.js, Express, and MongoDB. Write and manage your own blogs.
+              </p>
+            </div>
+
+            <ul>
+              <li>Node</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+            </ul>
+
+            <div className="project__links">
+              <a
+                href="https://github.com/alexticovschi/blogger"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaGithub className="project__icon" title="Github" />
+              </a>
+              <a
+                href="https://bloggingcoder.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaExternalLinkAlt
+                  className="project__icon"
+                  title="View Project"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="project movie-project">
           <figure className="project__img-wrapper">
             <a
@@ -131,7 +198,7 @@ const Work = () => {
 
             <div className="project__about">
               <p>
-                A Travel and Tourism Website. Choose from over 120 countries and
+                A Travel and Tourism Website. Choose your destination and
                 explore cultures, landscapes, wildlife and communities from Asia
                 to Africa, the Arctic to the Americas.
               </p>
