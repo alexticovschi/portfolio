@@ -13,6 +13,13 @@ const getPortfolioImages = graphql`
         }
       }
     }
+    flavoroso: file(relativePath: { eq: "portfolio/flavoroso.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     moviedb: file(relativePath: { eq: "portfolio/moviedb.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
@@ -54,6 +61,7 @@ const getPortfolioImages = graphql`
 const Work = () => {
   const {
     bloggingcoder,
+    flavoroso,
     moviedb,
     foodwise,
     traveler,
@@ -121,6 +129,64 @@ const Work = () => {
             </div>
           </div>
         </div>
+
+        <div className="project flavoroso-project">
+          <figure className="project__img-wrapper">
+            <a
+              href="http://flavoroso.herokuapp.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                fluid={flavoroso.childImageSharp.fluid}
+                className="project__img"
+                alt="Flavoroso hero"
+              />
+            </a>
+          </figure>
+
+          <div className="project__info">
+            <h5>Featured Project</h5>
+            <h4>Flavoroso Restaurant</h4>
+
+            <div className="project__about">
+              <p>
+                A Fullstack restaurant application built with Laravel, MySQL,
+                jQuery, Bootstrap and Sass. Perform CRUD operations from admin
+                dashboard.
+              </p>
+            </div>
+
+            <ul>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+              <li>Sass</li>
+            </ul>
+
+            <div className="project__links">
+              <a
+                href="https://github.com/alexticovschi/restaurant-app"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaGithub className="project__icon" title="Github" />
+              </a>
+              <a
+                href="http://flavoroso.herokuapp.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaExternalLinkAlt
+                  className="project__icon"
+                  title="View Project"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="project movie-project">
           <figure className="project__img-wrapper">
             <a

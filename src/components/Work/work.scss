@@ -91,10 +91,10 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    opacity: .9;
+    opacity: 0.9;
     box-shadow: var(--mainGrey) 0px 25px 30px -15px;
-    border: .1rem solid var(--mainGrey);
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .3s;
+    border: 0.1rem solid var(--mainGrey);
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.3s;
 
     @media screen and (max-width: 1050px) {
       height: 32rem;
@@ -132,7 +132,7 @@
       justify-self: self-end;
       align-self: center;
       color: var(--secondaryColor);
-      font-family: 'Space Mono', monospace;
+      font-family: "Space Mono", monospace;
       font-size: 1.3rem;
       margin: 0;
 
@@ -167,14 +167,14 @@
 
       @media screen and (max-width: 576px) {
         justify-self: self-start;
-        margin: 0 -.6rem;
+        margin: 0 -0.6rem;
       }
 
       li {
         flex: auto;
         font-size: 1.4rem;
         color: var(--lightGrey);
-        margin: 0 .6rem;
+        margin: 0 0.6rem;
       }
     }
   }
@@ -187,7 +187,7 @@
   &__about {
     width: 100%;
     height: auto;
-    border: .2rem solid var(--mainGrey);
+    border: 0.2rem solid var(--mainGrey);
     background-color: var(--mainWhite);
     box-shadow: var(--mainGrey) 0px 10px 30px -15px;
     padding: 4%;
@@ -218,7 +218,7 @@
     color: var(--darkGrey);
     margin-left: 2rem;
     cursor: pointer;
-    transition: all ease-in .3s;
+    transition: all ease-in 0.3s;
 
     &:hover {
       color: var(--secondaryColor);
@@ -227,6 +227,7 @@
 }
 
 .bloggingcoder-project,
+.movie-project,
 .traveler-project,
 .gsw-project {
   .project__img-wrapper {
@@ -241,7 +242,6 @@
     position: absolute;
     grid-column: 1 / 7;
 
-
     h5,
     h4,
     ul {
@@ -254,7 +254,7 @@
 
     ul {
       li {
-        margin: 0 .6rem;
+        margin: 0 0.6rem;
       }
     }
   }
