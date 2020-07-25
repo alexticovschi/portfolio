@@ -22,10 +22,10 @@ const About = () => {
           I've been interested in coding for a few years, finally taking the
           decision in 2017 to invest my time to pursue this career path. To
           achieve this goal I have devoted a large proportion of my time over
-          the past 2 years to studying HTML, CSS, Sass, JavaScript, ReactJS,
-          Shopify theme development, Node.js, Next.js, MongoDB, PHP, Laravel,
-          and MySQL. See my portfolio for examples of some web based apps I've
-          created.
+          the past 2 years building websites and web apps with HTML, CSS, Sass,
+          Bootstrap, JavaScript, ReactJS and also Node.js, Next.js, MongoDB,
+          PHP, Laravel, and MySQL. See my portfolio for examples of some web
+          based apps I've created.
         </p>
       </div>
     </section>

@@ -27,7 +27,7 @@ const getPortfolioImages = graphql`
         }
       }
     }
-    foodwise: file(relativePath: { eq: "portfolio/foodwise.jpg" }) {
+    casatoro: file(relativePath: { eq: "portfolio/casatoro.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid
@@ -63,7 +63,7 @@ const Work = () => {
     bloggingcoder,
     flavoroso,
     moviedb,
-    foodwise,
+    casatoro,
     traveler,
     gsw,
     lofter,
@@ -101,9 +101,10 @@ const Work = () => {
             </div>
 
             <ul>
-              <li>Node</li>
               <li>React</li>
+              <li>Sass</li>
               <li>Next.js</li>
+              <li>Node</li>
               <li>Express</li>
               <li>MongoDB</li>
             </ul>
@@ -219,6 +220,7 @@ const Work = () => {
               <li>TMDb API</li>
               <li>CSS Grid</li>
               <li>Flexbox</li>
+              <li>Sass</li>
             </ul>
 
             <div className="project__links">
@@ -265,8 +267,8 @@ const Work = () => {
             <div className="project__about">
               <p>
                 A Travel and Tourism Website. Choose your destination and
-                explore cultures, landscapes, wildlife and communities from Asia
-                to Africa, the Arctic to the Americas.
+                explore cultures, landscapes, wildlife and communities from
+                Europe, Asia and Africa.
               </p>
             </div>
 
@@ -275,6 +277,7 @@ const Work = () => {
               <li>GatsbyJS</li>
               <li>Contentful API</li>
               <li>CSS Grid</li>
+              <li>Sass</li>
             </ul>
 
             <div className="project__links">
@@ -299,50 +302,43 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="project foodwise-project">
+        <div className="project casatoro-project">
           <figure className="project__img-wrapper">
             <a
-              href="https://foodwise.netlify.com/"
+              href="https://www.casatoroholidayspain.com/"
               rel="noopener noreferrer"
               target="_blank"
             >
               <Image
-                fluid={foodwise.childImageSharp.fluid}
+                fluid={casatoro.childImageSharp.fluid}
                 className="project__img"
-                alt="foodwise hero"
+                alt="casatoro hero"
               />
             </a>
           </figure>
 
           <div className="project__info">
             <h5>Featured Project</h5>
-            <h4>FoodWise</h4>
+            <h4>Casa Toro</h4>
 
             <div className="project__about">
               <p>
-                A catering website made with Gatsby, CSS Grid and Flexbox.
-                Delivering sensational food to corporate events, weddings and
-                private parties in London and the UK.
+                Website built for a beautiful rental holiday house set by a
+                designer-builder couple in the old town of Calpe in the Valencia
+                region.
               </p>
             </div>
 
             <ul>
-              <li>React</li>
-              <li>Gatsby</li>
-              <li>CSS Grid</li>
-              <li>Flexbox</li>
+              <li>HTML</li>
+              <li>Saas</li>
+              <li>Bootstrap 4</li>
+              <li>jQuery</li>
             </ul>
 
             <div className="project__links">
               <a
-                href="https://github.com/alexticovschi/foodwise"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaGithub className="project__icon" title="Github" />
-              </a>
-              <a
-                href="https://foodwise.netlify.com/"
+                href="https://www.casatoroholidayspain.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -388,6 +384,7 @@ const Work = () => {
               <li>Material-UI</li>
               <li>CSS Grid</li>
               <li>Flexbox</li>
+              <li>Sass</li>
             </ul>
 
             <div className="project__links">
@@ -443,6 +440,7 @@ const Work = () => {
               <li>React</li>
               <li>CSS Grid</li>
               <li>Flexbox</li>
+              <li>Sass</li>
             </ul>
 
             <div className="project__links">
