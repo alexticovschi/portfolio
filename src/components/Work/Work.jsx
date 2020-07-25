@@ -131,6 +131,63 @@ const Work = () => {
           </div>
         </div>
 
+        <div className="project traveler-project">
+          <figure className="project__img-wrapper">
+            <a
+              href="https://traveler-gatsby.netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                fluid={traveler.childImageSharp.fluid}
+                className="project__img"
+                alt="traveler hero"
+              />
+            </a>
+          </figure>
+
+          <div className="project__info">
+            <h5>Featured Project</h5>
+            <h4>Traveler</h4>
+
+            <div className="project__about">
+              <p>
+                A Travel and Tourism Website. Choose your destination and
+                explore cultures, landscapes, wildlife and communities from
+                Europe, Asia and Africa.
+              </p>
+            </div>
+
+            <ul>
+              <li>React</li>
+              <li>GatsbyJS</li>
+              <li>Contentful API</li>
+              <li>CSS Grid</li>
+              <li>Sass</li>
+            </ul>
+
+            <div className="project__links">
+              <a
+                href="https://github.com/alexticovschi/traveler"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaGithub className="project__icon" title="Github" />
+              </a>
+              <a
+                href="https://traveler-gatsby.netlify.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaExternalLinkAlt
+                  className="project__icon"
+                  title="View Project"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="project flavoroso-project">
           <figure className="project__img-wrapper">
             <a
@@ -153,8 +210,8 @@ const Work = () => {
             <div className="project__about">
               <p>
                 A Fullstack restaurant application built with Laravel, MySQL,
-                jQuery, Bootstrap and Sass. Perform CRUD operations from admin
-                dashboard.
+                jQuery, Bootstrap and Sass. Admin can perform CRUD operations
+                from admin dashboard.
               </p>
             </div>
 
@@ -245,63 +302,6 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="project traveler-project">
-          <figure className="project__img-wrapper">
-            <a
-              href="https://traveler-gatsby.netlify.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Image
-                fluid={traveler.childImageSharp.fluid}
-                className="project__img"
-                alt="traveler hero"
-              />
-            </a>
-          </figure>
-
-          <div className="project__info">
-            <h5>Featured Project</h5>
-            <h4>Traveler</h4>
-
-            <div className="project__about">
-              <p>
-                A Travel and Tourism Website. Choose your destination and
-                explore cultures, landscapes, wildlife and communities from
-                Europe, Asia and Africa.
-              </p>
-            </div>
-
-            <ul>
-              <li>React</li>
-              <li>GatsbyJS</li>
-              <li>Contentful API</li>
-              <li>CSS Grid</li>
-              <li>Sass</li>
-            </ul>
-
-            <div className="project__links">
-              <a
-                href="https://github.com/alexticovschi/traveler"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaGithub className="project__icon" title="Github" />
-              </a>
-              <a
-                href="https://traveler-gatsby.netlify.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaExternalLinkAlt
-                  className="project__icon"
-                  title="View Project"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div className="project casatoro-project">
           <figure className="project__img-wrapper">
             <a
@@ -373,8 +373,8 @@ const Work = () => {
             <div className="project__about">
               <p>
                 A React based web app that connects to Firebase to pull data
-                about Golden State Warriors NBA players and games. Performs
-                Firebase JavaScript CRUD operations.
+                about Golden State Warriors NBA players and games. Admin can
+                login to perform Firebase CRUD operations.
               </p>
             </div>
 
