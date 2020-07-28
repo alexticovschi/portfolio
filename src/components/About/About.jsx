@@ -19,13 +19,13 @@ const About = () => {
           go by.
         </p>
         <p>
-          I've been interested in coding for a few years, finally taking the
-          decision in 2017 to invest my time to pursue this career path. To
-          achieve this goal I have devoted a large proportion of my time over
-          the past 2 years building websites and web apps with HTML, CSS, Sass,
-          Bootstrap, JavaScript, ReactJS and also Node.js, Next.js, MongoDB,
-          PHP, Laravel, and MySQL. See my portfolio for examples of some web
-          based apps I've created.
+          I am a motivated developer with skills in HTML5, CSS3, Sass,
+          JavaScript, jQuery, Bootstrap, React, Gatsby.js, Next.js, Node.js,
+          MongoDB, MySQL. I’m also confident with numerous backend frameworks
+          including Laravel, API & PHP development. My keen interest in
+          development affords investing my spare time to further my skill set
+          with interests in e-Commerce platforms like Shopify and other
+          languages such as Python.
         </p>
       </div>
     </section>
