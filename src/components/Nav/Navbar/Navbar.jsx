@@ -31,20 +31,12 @@ const Navbar = ({ isOpen, drawerClickHandler }) => {
               Contact
             </button>
           </li>
-          <li>
-            <a
-              href="https://www.instagram.com/alexticovschi.art/"
-              target="_blank"
-            >
-              <button className="nav__link">Hobby</button>
-            </a>
-          </li>
           <a
             className="nav__link-resume"
-            href="http://www.alexticovschi.com/resume.pdf"
+            href="http://www.alexticovschi.com/AlexTicovschiCV.pdf"
             target="_blank"
           >
-            <button className="btn">Resume</button>
+            <button className="btn">View CV</button>
           </a>
           <ToggleButton isOpen={isOpen} click={drawerClickHandler} />
         </ul>

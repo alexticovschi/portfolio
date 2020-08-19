@@ -64,16 +64,19 @@ header {
 }
 
 .btn {
-  color: var(--mainWhite);
-  padding: .9rem 2rem;
+  color: var(--darkGrey);
+  padding: .9rem 3rem;
   margin-left: 1rem;
-  background-color: var(--darkGrey);
+  // background-color: var(--darkGrey);
+  background-color: var(--primaryColor);
   border-radius: .4rem;
-  border: .2rem solid var(--primaryColor);
+  // border: .2rem solid var(--primaryColor);
+  border: .2rem solid var(--darkGrey);
   cursor: pointer;
   transition: all 0.3s ease 0s;
 
   &:hover {
     background-color: var(--mediumGrey);
+    color: var(--mainWhite);
   }
 }

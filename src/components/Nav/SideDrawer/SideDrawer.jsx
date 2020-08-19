@@ -39,25 +39,13 @@ const SideDrawer = ({ show, click }) => {
             Contact
           </button>
         </li>
-        <li>
-          <span className="side-drawer__dot"></span>
-
-          <a
-            onClick={click}
-            href="https://www.instagram.com/alexticovschi.art/"
-            target="_blank"
-          >
-            <button className="side-drawer__link">Hobby</button>
-          </a>
-        </li>
-
         <a
           onClick={click}
           className="side-drawer__link-resume"
-          href="http://www.alexticovschi.com/resume.pdf"
+          href="http://www.alexticovschi.com/AlexTicovschiCV.pdf"
           target="_blank"
         >
-          <button className="side-drawer__resume-btn">Resume</button>
+          <button className="side-drawer__resume-btn">View CV</button>
         </a>
       </ul>
     </nav>
