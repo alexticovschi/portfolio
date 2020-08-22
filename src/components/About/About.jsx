@@ -21,11 +21,8 @@ const About = () => {
         <p>
           I am a motivated developer with skills in HTML5, CSS3, Sass,
           JavaScript, jQuery, Bootstrap, React, Gatsby.js, Next.js, Node.js,
-          MongoDB, MySQL. I’m also confident with numerous backend frameworks
-          including Laravel, API & PHP development. My keen interest in
-          development affords investing my spare time to further my skill set
-          with interests in e-Commerce platforms like Shopify and other
-          languages such as Python.
+          MongoDB, MySQL. I’m also confident with backend frameworks like
+          Laravel, API & PHP development.
         </p>
       </div>
     </section>
