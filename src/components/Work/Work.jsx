@@ -74,6 +74,62 @@ const Work = () => {
       <h1 className="work__title">Some Things I've Built</h1>
 
       <div className="work__wrapper">
+        <div className="project traveler-project">
+          <figure className="project__img-wrapper">
+            <a
+              href="https://traveler-tours.netlify.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                fluid={traveler.childImageSharp.fluid}
+                className="project__img"
+                alt="traveler hero"
+              />
+            </a>
+          </figure>
+
+          <div className="project__info">
+            <h5>Featured Project</h5>
+            <h4>Traveler</h4>
+
+            <div className="project__about">
+              <p>
+                A JAMstack app built with Gatsby that fetches tour data from
+                Contenful API. Designed to be a Travel and Tourism website app.
+              </p>
+            </div>
+
+            <ul>
+              <li>GatsbyJS</li>
+              <li>Contentful API</li>
+              <li>GraphQL</li>
+              <li>CSS Grid</li>
+              <li>Sass</li>
+            </ul>
+
+            <div className="project__links">
+              <a
+                href="https://github.com/alexticovschi/traveler"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaGithub className="project__icon" title="Github" />
+              </a>
+              <a
+                href="https://traveler-gatsby.netlify.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaExternalLinkAlt
+                  className="project__icon"
+                  title="View Project"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="project bloggingcoder-project">
           <figure className="project__img-wrapper">
             <a
@@ -119,63 +175,6 @@ const Work = () => {
               </a>
               <a
                 href="https://bloggingcoder.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaExternalLinkAlt
-                  className="project__icon"
-                  title="View Project"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="project traveler-project">
-          <figure className="project__img-wrapper">
-            <a
-              href="https://traveler-gatsby.netlify.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Image
-                fluid={traveler.childImageSharp.fluid}
-                className="project__img"
-                alt="traveler hero"
-              />
-            </a>
-          </figure>
-
-          <div className="project__info">
-            <h5>Featured Project</h5>
-            <h4>Traveler</h4>
-
-            <div className="project__about">
-              <p>
-                A Travel and Tourism Website. Choose your destination and
-                explore cultures, landscapes, wildlife and communities from
-                Europe, Asia and Africa.
-              </p>
-            </div>
-
-            <ul>
-              <li>React</li>
-              <li>GatsbyJS</li>
-              <li>Contentful API</li>
-              <li>CSS Grid</li>
-              <li>Sass</li>
-            </ul>
-
-            <div className="project__links">
-              <a
-                href="https://github.com/alexticovschi/traveler"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaGithub className="project__icon" title="Github" />
-              </a>
-              <a
-                href="https://traveler-gatsby.netlify.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
