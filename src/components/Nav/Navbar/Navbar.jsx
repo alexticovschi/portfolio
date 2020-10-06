@@ -34,7 +34,6 @@ const Navbar = ({ isOpen, drawerClickHandler }) => {
           </li>
           <a
             className="nav__link-resume"
-            // href="http://www.alexticovschi.com/AlexTicovschiCV.pdf"
             href={withPrefix("/alex-ticovschi-cv.pdf")}
             target="_blank"
           >

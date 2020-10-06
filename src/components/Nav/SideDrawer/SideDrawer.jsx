@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import "./SideDrawer.scss"
 
@@ -42,7 +43,7 @@ const SideDrawer = ({ show, click }) => {
         <a
           onClick={click}
           className="side-drawer__link-resume"
-          href="http://www.alexticovschi.com/AlexTicovschiCV.pdf"
+          href={withPrefix("/alex-ticovschi-cv.pdf")}
           target="_blank"
         >
           <button className="side-drawer__resume-btn">View CV</button>
