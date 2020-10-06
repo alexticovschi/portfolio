@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 import ToggleButton from "../ToggleButton/ToggleButton"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import logo from "../../../images/logo.svg"
@@ -33,7 +34,8 @@ const Navbar = ({ isOpen, drawerClickHandler }) => {
           </li>
           <a
             className="nav__link-resume"
-            href="http://www.alexticovschi.com/AlexTicovschiCV.pdf"
+            // href="http://www.alexticovschi.com/AlexTicovschiCV.pdf"
+            href={withPrefix("/alex-ticovschi-cv.pdf")}
             target="_blank"
           >
             <button className="btn">View CV</button>
