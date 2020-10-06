@@ -19,6 +19,10 @@ header {
   border-bottom: .1rem solid var(--darkGrey);
   background-color: var(--mainWhite);
   box-shadow: 0 2.5px 2px -2px var(--mainGrey);
+
+  @media screen and (max-width: 769px) {
+    padding: 1.2rem 4%;
+  }
 }
 
 .nav {
