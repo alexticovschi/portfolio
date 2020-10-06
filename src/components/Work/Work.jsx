@@ -117,7 +117,7 @@ const Work = () => {
                 <FaGithub className="project__icon" title="Github" />
               </a>
               <a
-                href="https://traveler-gatsby.netlify.com/"
+                href="https://traveler-tours.netlify.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
