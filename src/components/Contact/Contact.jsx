@@ -8,7 +8,7 @@ const Contact = () => {
 
       <div>
         <a className="contact__phone" href="tel:07460 760 448">
-          07460 760 448
+          +44 7460 760 448
         </a>
       </div>
       <button className="contact__btn">
