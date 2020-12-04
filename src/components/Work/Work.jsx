@@ -8,49 +8,42 @@ const getPortfolioImages = graphql`
   query portfolioImages {
     bloggingcoder: file(relativePath: { eq: "portfolio/bloggingcoder.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     flavoroso: file(relativePath: { eq: "portfolio/flavoroso.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     moviedb: file(relativePath: { eq: "portfolio/moviedb.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     casatoro: file(relativePath: { eq: "portfolio/casatoro.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     traveler: file(relativePath: { eq: "portfolio/traveler.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    gsw: file(relativePath: { eq: "portfolio/gsw.jpg" }) {
+    knightsbridge: file(relativePath: { eq: "portfolio/knightsbridge.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    lofter: file(relativePath: { eq: "portfolio/lofter.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -65,8 +58,7 @@ const Work = () => {
     moviedb,
     casatoro,
     traveler,
-    gsw,
-    lofter,
+    knightsbridge,
   } = useStaticQuery(getPortfolioImages)
 
   return (
@@ -74,10 +66,66 @@ const Work = () => {
       <h1 className="work__title">Some Things I've Built</h1>
 
       <div className="work__wrapper">
+        <div className="project knightsbridge-project">
+          <figure className="project__img-wrapper">
+            <a
+              href="https://knightsbridgeliving.netlify.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <Image
+                fluid={knightsbridge.childImageSharp.fluid}
+                className="project__img"
+                alt="knightsbridge hero"
+              />
+            </a>
+          </figure>
+
+          <div className="project__info">
+            <h5>Featured Project</h5>
+            <h4>Knightsbridge Living</h4>
+
+            <div className="project__about">
+              <p>
+                A JAMstack real estate website built with Gatsby.js and
+                Contentful - Headless CMS.
+              </p>
+            </div>
+
+            <ul>
+              <li>GatsbyJS</li>
+              <li>Contentful API</li>
+              <li>GraphQL</li>
+              <li>CSS Grid</li>
+              <li>Sass</li>
+            </ul>
+
+            <div className="project__links">
+              <a
+                href="https://github.com/alexticovschi/knightsbridge-living"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaGithub className="project__icon" title="Github" />
+              </a>
+              <a
+                href="https://knightsbridgeliving.netlify.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FaExternalLinkAlt
+                  className="project__icon"
+                  title="View Project"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
         <div className="project traveler-project">
           <figure className="project__img-wrapper">
             <a
-              href="https://traveler-tours.netlify.com/"
+              href="https://traveler-tours.netlify.app/"
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -96,7 +144,7 @@ const Work = () => {
             <div className="project__about">
               <p>
                 A JAMstack app built with Gatsby that fetches tour data from
-                Contenful API. Designed to be a Travel and Tourism website app.
+                Contentful API. Designed to be a Travel and Tourism website app.
               </p>
             </div>
 
@@ -117,7 +165,7 @@ const Work = () => {
                 <FaGithub className="project__icon" title="Github" />
               </a>
               <a
-                href="https://traveler-tours.netlify.com/"
+                href="https://traveler-tours.netlify.app/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -338,120 +386,6 @@ const Work = () => {
             <div className="project__links">
               <a
                 href="https://www.casatoroholidayspain.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaExternalLinkAlt
-                  className="project__icon"
-                  title="View Project"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="project gsw-project">
-          <figure className="project__img-wrapper">
-            <a
-              href="https://golden-state-warriors.netlify.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Image
-                fluid={gsw.childImageSharp.fluid}
-                className="project__img"
-                alt="gsw hero"
-              />
-            </a>
-          </figure>
-
-          <div className="project__info">
-            <h5>Featured Project</h5>
-            <h4>Golden State Warriors</h4>
-
-            <div className="project__about">
-              <p>
-                A React based web app that connects to Firebase to pull data
-                about Golden State Warriors NBA players and games. Admin can
-                login to perform Firebase CRUD operations.
-              </p>
-            </div>
-
-            <ul>
-              <li>React</li>
-              <li>Firebase</li>
-              <li>Material-UI</li>
-              <li>CSS Grid</li>
-              <li>Flexbox</li>
-              <li>Sass</li>
-            </ul>
-
-            <div className="project__links">
-              <a
-                href="https://github.com/alexticovschi/gsw-react"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaGithub className="project__icon" title="Github" />
-              </a>
-              <a
-                href="https://gsw-react.netlify.com/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaExternalLinkAlt
-                  className="project__icon"
-                  title="View Project"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="project lofter-project">
-          <figure className="project__img-wrapper">
-            <a
-              href="https://lofter.netlify.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <Image
-                fluid={lofter.childImageSharp.fluid}
-                className="project__img"
-                alt="lofter hero"
-              />
-            </a>
-          </figure>
-
-          <div className="project__info">
-            <h5>Featured Project</h5>
-            <h4>Lofter</h4>
-
-            <div className="project__about">
-              <p>
-                An Interior Design website made with React, CSS Grid and
-                Flexbox. Crafting elegant solutions to complex problems through
-                strategic thought and technological excellence.
-              </p>
-            </div>
-
-            <ul>
-              <li>React</li>
-              <li>CSS Grid</li>
-              <li>Flexbox</li>
-              <li>Sass</li>
-            </ul>
-
-            <div className="project__links">
-              <a
-                href="https://github.com/alexticovschi/lofter"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FaGithub className="project__icon" title="Github" />
-              </a>
-              <a
-                href="https://lofter.netlify.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
