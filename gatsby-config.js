@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Alex Ticovschi - Portfolio",
+    title: "Alex Ticovschi - Front End Developer",
     description:
       "I am a motivated developer with skills in HTML5, CSS3, Sass, JavaScript, jQuery, Bootstrap, React, Gatsby.js, Next.js, Node.js, MongoDB, MySQL and PostgreSQL. I’m also confident with backend frameworks like Laravel, API & PHP development.",
     author: "Alex Ticovschi",
