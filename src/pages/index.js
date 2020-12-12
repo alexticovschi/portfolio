@@ -6,10 +6,12 @@ import Work from "../components/Work/Work"
 import Links from "../components/Links/Links"
 import Email from "../components/Email/Email"
 import Contact from "../components/Contact/Contact"
+import SEO from "../components/SEO"
 
 const IndexPage = () => (
   <main className="container">
     <Layout>
+      <SEO />
       <Links />
       <Email />
       <Hero />
