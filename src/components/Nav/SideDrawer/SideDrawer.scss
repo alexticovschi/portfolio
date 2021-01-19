@@ -10,6 +10,7 @@
   z-index: 200000000;
   transform: translateX(-100%);
   transition: transform 0.4s ease-out;
+  overflow-y: scoll;
 
   &.open {
     transform: translateX(0);
@@ -43,7 +44,8 @@
     position: relative;
     right: 0px;
     margin-left: auto;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+      "Lucida Console", Monaco, monospace;
     box-shadow: rgba(2, 12, 27, 0.7) -10px 0px 30px -15px;
     padding: 50px;
   }
@@ -54,9 +56,9 @@
     outline: none;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: .9rem 2rem;
+    padding: 0.9rem 2rem;
     border: none;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     margin: 2rem 0;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -74,8 +76,8 @@
     padding: 1.7rem 3rem;
     margin-left: 1rem;
     background-color: var(--darkGrey);
-    border-radius: .5rem;
-    border: .2rem solid var(--primaryColor);
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--primaryColor);
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
@@ -84,7 +86,6 @@
     }
   }
 }
-
 
 @media (min-width: 769px) {
   .side-drawer {
